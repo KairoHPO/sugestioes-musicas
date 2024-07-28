@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançador das puras</title>
+    <link rel="stylesheet" href="p1.css">
+</head>
+<body>
+    <header>
+        <h1>Fala doçura ❤️ Seja a cobaia e lance as brabas</h1>
+        <nav>
+            <ul>
+                <li><a href="#suggestions">Envie sua Sugestão</a></li>
+                <li><a href="#list">Lista de Sugestões</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="suggestions">
+            <h2>Envie sua Sugestão</h2>
+            <form id="suggestionForm">
+                <label for="category">Categoria:</label>
+                <select id="category" name="category" required>
+                    <option value="musica">Música</option>
+                    <option value="album">Álbum</option>
+                    <option value="artista">Artista</option>
+                </select>
+                <br>
+                <label for="suggestion">Sugestão:</label>
+                <input type="text" id="suggestion" name="suggestion" required>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="list">
+            <h2>Lista de Sugestões</h2>
+            <h3>Músicas</h3>
+            <ul id="musicaList"></ul>
+            <h3>Álbuns</h3>
+            <ul id="albumList"></ul>
+            <h3>Artistas</h3>
+            <ul id="artistaList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site de Sugestões de Músicas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="p1.js"></script>
+</body>
+</html>
